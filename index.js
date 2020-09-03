@@ -14,4 +14,5 @@ function reduce(sourceArray, callback, startingPoint) {
   for (let i = 0; i < sourceArray.length; i++) {
     r = callback(sourceArray[i], r)
   }
+  return r;
 }
