@@ -9,5 +9,5 @@ function map(source, callback) {
 }
 
 function reduce(sourceArray, callback, startingPoint) {
-  let startingPoint
+  let start = (!!startingPoint ? )
 }
