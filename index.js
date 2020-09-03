@@ -8,11 +8,13 @@ function map(source, callback) {
   return result;
 }
 
-function reduce(sourceArray, callback, startingPoint) {
-  let r = (!!startingPoint ? startingPoint : sourceArray[0])
-  
-  for (let i = 0; i < sourceArray.length; i++) {
-    r = callback(sourceArray[i], r)
+function reduce(src, cb, starting){
+  let r = (!!starting) ? starting : src[0]
+  let i = (!!starting) ? 0 : 1
+
+  for (; i < src.length; i++) {
+    r = cb(src[i], r)
   }
+
   return r;
 }
