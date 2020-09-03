@@ -7,3 +7,5 @@ function map(source, callback) {
   }
   return result;
 }
+
+function reduce(source,)
